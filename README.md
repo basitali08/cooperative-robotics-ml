@@ -46,7 +46,8 @@ This system analyzes these parameters to predict whether a robot team will **suc
 cooperative-robotics-ml/
 │
 ├── data/
-│   └── robotics_coordination_data.csv     # 5,000 mission records
+│   ├── robotics_coordination_data.csv     # 5,000 mission records
+│   └── generate_data.py                    # Synthetic robotics coordination data generator
 │
 ├── models/                                 # Serialized trained models
 │   ├── best_classifier.pkl                 # XGBoost (best: ~95%)
@@ -73,9 +74,6 @@ cooperative-robotics-ml/
 │
 ├── app/
 │   └── app.py                              # Streamlit dashboard
-│
-├── data/
-│   └── generate_data.py                    # Synthetic robotics coordination data generator
 │
 ├── requirements.txt
 └── README.md
@@ -174,7 +172,7 @@ cooperative-robotics-ml/
 
 ```bash
 # 1. Clone & enter
-git clone https://github.com/yourusername/cooperative-robotics-ml.git
+git clone https://github.com/basitali08/cooperative-robotics-ml.git
 cd cooperative-robotics-ml
 
 # 2. Install dependencies
@@ -205,3 +203,10 @@ streamlit run app/app.py
 ## License
 
 MIT License — free for academic and commercial use.
+
+---
+
+<p align="center">
+<b>Built by Basit Ali</b> · <a href="https://github.com/basitali08">GitHub</a> · <a href="mailto:whoisbasit@gmail.com">Email</a><br>
+<sub>Cooperative Robotics & Machine Learning · MS Data Science Portfolio</sub>
+</p>
